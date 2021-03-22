@@ -1,8 +1,8 @@
-@import 'reset';
-@import 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&display=swap');
+@import "reset";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&display=swap");
 
-$green: rgb(34,181,115);
+$green: rgb(34, 181, 115);
 
 body {
   display: flex;
@@ -10,9 +10,17 @@ body {
   justify-content: center;
   align-items: center;
   background-color: $green;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 20px;
   width: 100vw;
+
+  #hamburger {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 100vw;
+  }
 
   .tiles {
     display: flex;
@@ -25,6 +33,17 @@ body {
     .tile {
       background-color: $gray;
       color: $white;
+
+      #readBtn {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0;
+        color: $dark;
+        letter-spacing: 3px;
+        font-weight: 700;
+        font-size: .9rem;
+        text-align: left;
+      }
     }
   }
 }
